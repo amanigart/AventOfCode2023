@@ -1,0 +1,53 @@
+Console.WriteLine($"Puzzle #1: {SolvePuzzle1()}");
+Console.WriteLine($"Puzzle #2: {SolvePuzzle2()}");
+
+var input = System.IO.File.ReadAllLines("./input.txt").ToList();
+
+
+static string SolvePuzzle1()
+{
+    int result = default;
+
+    return result.ToString();
+}
+
+
+static string SolvePuzzle2()
+{
+    int result = default;
+
+    return string.Empty;
+}
+
+
+
+
+
+
+--------------------------------------
+
+static int SolvePuzzleOne()
+{
+    // 1 - Get the input as a list of string
+    var input = System.IO.File.ReadAllLines("./input1.txt").ToList();
+
+    // 2 - Regroup total of calories by elf
+    var totals = new List<int>();
+    int elfTotal = 0;
+
+    input.ForEach(x =>
+    {
+        if (Int32.TryParse(x, out int item))
+        {
+            elfTotal += item;
+        }
+        else
+        {
+            totals.Add(elfTotal);
+            elfTotal = 0;
+        }
+    });
+
+    // 3 - Find the total of calories from the elf that have the greater amount
+    return totals.Max();
+}

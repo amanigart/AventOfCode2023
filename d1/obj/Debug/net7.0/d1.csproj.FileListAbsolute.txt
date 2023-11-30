@@ -1,0 +1,14 @@
+C:\Users\amani\source\repos\CHALLENGES\AventOfCode2023\d1\bin\Debug\net7.0\d1.exe
+C:\Users\amani\source\repos\CHALLENGES\AventOfCode2023\d1\bin\Debug\net7.0\d1.deps.json
+C:\Users\amani\source\repos\CHALLENGES\AventOfCode2023\d1\bin\Debug\net7.0\d1.runtimeconfig.json
+C:\Users\amani\source\repos\CHALLENGES\AventOfCode2023\d1\bin\Debug\net7.0\d1.dll
+C:\Users\amani\source\repos\CHALLENGES\AventOfCode2023\d1\bin\Debug\net7.0\d1.pdb
+C:\Users\amani\source\repos\CHALLENGES\AventOfCode2023\d1\obj\Debug\net7.0\d1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amani\source\repos\CHALLENGES\AventOfCode2023\d1\obj\Debug\net7.0\d1.AssemblyInfoInputs.cache
+C:\Users\amani\source\repos\CHALLENGES\AventOfCode2023\d1\obj\Debug\net7.0\d1.AssemblyInfo.cs
+C:\Users\amani\source\repos\CHALLENGES\AventOfCode2023\d1\obj\Debug\net7.0\d1.csproj.CoreCompileInputs.cache
+C:\Users\amani\source\repos\CHALLENGES\AventOfCode2023\d1\obj\Debug\net7.0\d1.dll
+C:\Users\amani\source\repos\CHALLENGES\AventOfCode2023\d1\obj\Debug\net7.0\refint\d1.dll
+C:\Users\amani\source\repos\CHALLENGES\AventOfCode2023\d1\obj\Debug\net7.0\d1.pdb
+C:\Users\amani\source\repos\CHALLENGES\AventOfCode2023\d1\obj\Debug\net7.0\d1.genruntimeconfig.cache
+C:\Users\amani\source\repos\CHALLENGES\AventOfCode2023\d1\obj\Debug\net7.0\ref\d1.dll
