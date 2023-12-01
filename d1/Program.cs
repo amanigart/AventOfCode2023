@@ -35,10 +35,11 @@ static int SolvePuzzle2()
         {"seven", "7"}, {"eight", "8"}, {"nine", "9"}
     };
 
+    var pattern = @"\d|(?=(one|two|three|four|five|six|seven|eight|nine))";
+    var regx = new Regex(pattern);
+
     input.ForEach(str =>
     {
-        var pattern = @"\d|(?=(one|two|three|four|five|six|seven|eight|nine))";
-        var regx = new Regex(pattern);
         var matches = regx.Matches(str);
 
         var match1 = !string.IsNullOrEmpty(matches.First().Value) ? matches.First().Value : matches.First().Groups[1].Value;
