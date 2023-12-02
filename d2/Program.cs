@@ -1,5 +1,5 @@
 ﻿Console.WriteLine($"Puzzle #1: {SolvePuzzle1()}");
-//Console.WriteLine($"Puzzle #2: {SolvePuzzle2()}");
+Console.WriteLine($"Puzzle #2: {SolvePuzzle2()}");
 
 static int SolvePuzzle1()
 {
@@ -15,7 +15,7 @@ static int SolvePuzzle1()
         int commaIndex = str.IndexOf(":");
         int id = int.Parse(str[5..commaIndex]);
 
-        var isValid = !str
+        bool isValid = !str
             .Substring(commaIndex + 1)
             .Split(";")
             .Select(set => set.Split(","))
@@ -45,7 +45,31 @@ static int SolvePuzzle1()
 static int SolvePuzzle2()
 {
     var input = System.IO.File.ReadAllLines("./input.txt").ToList();
-    var results = new List<int>();
+    var powers = new List<int>();
 
-    return results.First();
+    input.ForEach(str =>
+    {
+        int commaIndex = str.IndexOf(":");
+
+        var pairs = str
+            .Substring(commaIndex + 1)
+            .Split(new char[] { ',', ';' })
+            .Select(sub =>
+            {
+                var pair = string.Concat(sub.Where(c => !char.IsWhiteSpace(c)));
+                int digit = int.Parse(new String(pair.Where(char.IsDigit).ToArray()));
+                var color = new String(pair.Where(char.IsLetter).ToArray());
+
+                return new Tuple<string, int>(color, digit);
+            })
+            .ToList();
+
+        var red = pairs.Where(p => p.Item1 == "red").Max(p => p.Item2);
+        var blue = pairs.Where(p => p.Item1 == "blue").Max(p => p.Item2);
+        var green = pairs.Where(p => p.Item1 == "green").Max(p => p.Item2);
+
+        powers.Add(red * blue * green);
+    });
+
+    return powers.Sum();
 }
